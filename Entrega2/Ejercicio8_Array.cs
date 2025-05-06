@@ -17,7 +17,7 @@ namespace Entrega2
             {
                 for (int fila = 0; fila < 3; fila++)
                 {
-                    Console.WriteLine($"ingresar el numero de la fila {fila + 1} columna {columna + 1}");
+                    Console.Write($"ingresar el numero de la fila {fila + 1} columna {columna + 1}: ");
                     matriz[fila, columna] = int.Parse(Console.ReadLine());
                 }
             }
@@ -35,7 +35,7 @@ namespace Entrega2
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    Console.WriteLine(matriz[i, j]);
+                    Console.Write($"{matriz[i, j]} ");
                 }
             }
         }

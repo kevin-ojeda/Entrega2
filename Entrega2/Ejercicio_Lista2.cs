@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -19,16 +20,21 @@ namespace Entrega2
                 int a = int.Parse(Console.ReadLine());
                 nums.Add(a);
             }
-            Console.WriteLine("ingresar números para guardar en una lista");
+            Console.Write("ingresar un número para comprobar si se encuentra en la lista:");
             int numero = int.Parse(Console.ReadLine());
+            int b = 0;
             for (int i = 0;i < nums.Count;i++)
             {
                 if (nums[i] == numero)
-                    Console.WriteLine("el número se encuentra en la lista");
-                else
-                {
-                    Console.WriteLine("el número no se encuentra en la lista");
-                }
+                    b++;
+            }
+            if (b > 0)
+            {
+                Console.WriteLine("el número se encuentra en la lista");
+            }
+            else
+            {
+                Console.WriteLine("el número no se encuentra en la lista");
             }
         }
     }

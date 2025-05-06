@@ -19,7 +19,7 @@ namespace Entrega2
                 nums.Add(a);
             }
             int suma = 0;
-            for (int i = 0;i < nums.Count;i++)
+            for (int i = 0;i < 5;i++)
             {
                 suma += nums[i];
             }

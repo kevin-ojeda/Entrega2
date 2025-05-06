@@ -17,25 +17,25 @@ namespace Entrega2
             {
                 nums[i] = int.Parse(Console.ReadLine());
             }
-            int a = 0;
-            int b = 0; 
-            int c = 0;
+            int ceros = 0;
+            int positivos = 0; 
+            int negativos = 0;
             for (int i = 0; i < 10; i++)
             {
                 if (nums[i] == 0)
                 {
-                    a++;
+                    ceros++;
                 }
                 else if (nums[i] > 0)
                 {
-                    b++;
+                    positivos++;
                 }
                 else
                 {
-                    c++;
+                    negativos++;
                 }
             }
-            Console.WriteLine($"Hay {a} numeros que soon 0, {b} que son positivos y {c} negativos");
+            Console.WriteLine($"Hay {ceros} numeros que soon 0, {positivos} que son positivos y {negativos} negativos");
         }
     }
 }

@@ -17,12 +17,12 @@ namespace Entrega2
             for (int i = 0; i < 10; i++)
             {
                 nums[i] = random.Next(1, 101);
+                Console.WriteLine(nums[i]);
             }
             int max = 0;
             int min = 100;
             for (int i = 0; i < 10; i++)
             {
-                Console.WriteLine(nums[i]);
                 if (nums[i] > max)
                 {
                     max = nums[i];

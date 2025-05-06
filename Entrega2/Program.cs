@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Ejercicio_Lista3.Ejecutar();
+            Ejercicio_Lista2.Ejecutar();
         }
     }
 }
